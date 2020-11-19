@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #44A08D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #17221B, #293C3E, #2D4A31, #48594D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #17221B, #293C3E, #2D4A31, #48594D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
+
+header {
+    width: 100%;
+    height: 130px;
+    background-color: rgb(27, 45, 36);
+    padding: 20px 0px 20px 0px;
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+}
+
+header .logo figure { 
+    width: 200px;
+     margin: auto;
+   /* border: 1px solid blueviolet; */
+}
+
+header .logo figure img {
+    width: 100%;
+   /* border: 1px solid rgb(223, 226, 43); */
+    
+}
+
+.menu_bar {
+    /* para desaparecer el icono */
+    display: none;
+}
+
+header nav {
+    width: 100%;
+    height: 60%;
+    background: white ;
+    text-align: center;
+    padding: 5px 0px 0px 0px;
+    border: 1px solid rgb(36, 4, 95); 
+}
+
+header nav ul {
+    list-style: none;
+ 
+}
+
+header nav ul li  {
+     /* se ponen uno al lado del otro */
+     margin: 0px 20px 0px 20px;
+     display: inline-block;
+  /*  border: 1px solid yellow;  */
+
+}
+
+header nav li:hover {
+    background: #ecf0f1;
+   
+}
+
+header nav ul li a {
+    color: rgb(0, 104, 56);
+    padding: 5px 30px 5px 30px;
+    /* Para que la propiedad de padding funcione también para los lados */
+    display: block;
+    text-decoration: none;
+  /*  border: 1px solid blue; */
+   
+}
+
+
+/* FIN DEL MENU*/
+
+/* IDEX*/
+
+.cover {
+    background-image: url("../img/verde.jpg");
+    background-color: #000100; 
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right center;
+    height: 500px;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+   /* border: 1px solid greenyellow; */
+}
+
+
+.cover h1 {
+    width: 40%;
+    color:  #ecf0f1;
+    font-family: 'Abel', sans-serif;
+    font-size: 70px;
+    margin: 10px 60px 0px 60px;
+    padding: 70px 50px 0px 50px;
+    text-align: center;
+   /* border: 1px solid rgb(212, 0, 255); */
+   
+}
+
+.cover h2 {
+    width: 40%;
+    color:  #ecf0f1;
+    font-size: 30px;
+    margin: 10px 60px 0px 60px;
+    padding: 0px 40px 0px 40px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+   /* border: 1px solid greenyellow; */
+}
+
+/*NOSOTROS */
+
+.nosotros h1 {
+    color:  #ecf0f1;
+    width: 35%;
+    text-align: center;
+    margin: 60px 60px 10px 60px;
+    padding: 10px 0px 0px 0px;
+    font-size: 45px;
+    font-family: 'Abel', sans-serif;
+   /* border: 1px solid rgb(103, 16, 218); */
+}
+
+.nosotros p {
+    width: 35%;
+    margin: 0px 60px 60px 60px;
+    padding: 10px;
+    color: #ecf0f1; 
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif; 
+  /*  border: 1px solid rgb(218, 137, 16); */
+}
+
+
+
+.team {
+    width: 45%;
+    float: right;
+    margin-top: 50px;
+   /* border: 1px solid rgb(16, 218, 50);*/
+}
+
+.team h2 {
+    width: 80%;
+    color:  #ecf0f1;
+    text-align: center;
+    margin: 60px 30px 70px 30px;
+    padding: 10px 0px 0px 0px;
+    font-size: 25px;
+    font-family: 'Abel', sans-serif;
+    /*border: 1px solid rgb(205, 218, 16); */
+}
+
+.team .team1 {
+    display: flex;
+    margin: 10px;
+   /* border: 1px solid rgb(255, 47, 193); */
+}
+
+.team .team1 .tigresa {
+    width: 65%;
+    margin: 5px ;
+    display: flex;
+}
+
+.team .team1 .mantis {
+    width: 65%;
+    margin: 5px;
+    display: flex;
+}
+
+
+.team .team1 .panda {
+    width: 65%;
+    margin: 5px;
+    display: flex;
+    
+}
+
+.team .team2 {
+    display: flex;
+    align-content: flex-end;
+    margin: 10px 10px 20px 10px;
+   /* border: 1px solid rgb(229, 255, 0);  */
+}
+
+.team .team2 .grulla {
+    width: 65%;
+    margin: 15px 5px;
+   
+}
+
+
+.team .team2 .serpiente{
+    width: 65%;
+    margin: 15px 5px;
+    
+}
+
+
+.team .team2 .mono {
+    width: 65%;
+    margin: 15px 5px;
+    
+}
+
+.nosotros h2 {
+    width: 35%;
+    color:  #ecf0f1;
+    text-align: center;
+    margin: 0px 60px 20px 60px;
+    padding: 10px 0px 0px 0px;
+    font-size: 25px;
+    font-family: 'Abel', sans-serif;
+   /* border: 1px solid rgb(255, 0, 157); */
+}
+
+.nosotros .team3 {
+    width: 35%;
+    margin: 10px 60px 20px 60px;
+   /* border: 1px solid rgb(255, 196, 0);*/
+}
+
+.nosotros .team3 .maestro {
+    width: 40%;
+    display: block;
+    margin: auto;
+    
+}
+
+
+
+/* CLASES */
+
+.content {
+    margin: 30px 0px 70px 0px;
+  /*  border: 1px solid rgb(255, 165, 47); */
+}
+
+.content img {
+    width: 40%;
+    float: right;
+    margin: 100px 50px 0px 50px;
+  /*  border: 1px solid greenyellow; */
+}
+
+.content h1{
+    width: 30%;
+    margin: 60px 70px 10px 70px;
+    font-size: 45px;
+    color:  #ecf0f1;
+    font-family: 'Abel', sans-serif;
+   /*border: 1px solid rgb(47, 196, 255); */
+}
+
+.content h2 {
+    width: 30%;
+    margin: 10px 60px 0px 60px;
+    color:  #ecf0f1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 20px 20px 0px 20px;
+   /* border: 1px solid rgb(217, 255, 47); */
+}
+
+.content h3 {
+    width: 30%;
+    margin: 10px 60px 0px 60px;
+    color:  #ecf0f1;
+    font-size: 25px;
+    font-family: 'Abel', sans-serif;
+    padding: 20px 20px 0px 20px;
+  /*  border: 1px solid rgb(217, 255, 47); */
+}
+
+.content p {
+    width: 30%;
+    font-size: 15px;
+    margin: 10px 60px 0px 60px;
+    color:  #ecf0f1;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 20px 0px 20px;
+  /*  border: 1px solid rgb(217, 255, 47); */
+}
+
+
+
+/*CONCTACTO*/
+
+#form input, textarea {
+    width: 55%;
+    /*border: 1px solid #000; */
+
+}
+
+#cont_texto {
+    width: 35%;
+    padding: 50px 25px;
+    margin: 70px 60px;
+    color:  #ecf0f1;
+   /* border: 1px solid rgb(217, 255, 47);  */
+}
+
+h1 { 
+    width: 35%;
+    margin: 60px 70px 10px 70px;
+    font-size: 45px;
+    color:  #ecf0f1;
+    font-family: 'Abel', sans-serif;
+  /*border: 1px solid rgb(217, 255, 47); */
+}
+
+#cont_texto h2 {
+    font-size: 25px;
+    font-family: 'Abel', sans-serif;
+   
+}
+
+#cont_texto label {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.mapa {
+    width: 50%;
+    float: right;
+    margin: 150px 0px 0px 0px;
+  /* border: 1px solid rgb(255, 200, 47); */
+}
+
+
+/*FOOTER*/
+
+.foot {
+    height: 95px;
+    align-items: flex-start;
+    background-color: rgb(27, 45, 36);
+    
+}
+
+
+.foot .social img {
+    width: 3%;
+    float: right;
+    margin: 20px 30px 0px 20px;
+  /* border: 1px solid rgb(255, 200, 47); */
+}
+
+
+.foot a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+    padding: 30px 100px 0px 100px;
+    border: 1px solid rgb(255, 200, 47); 
+}
+
+
+/*LANDING PAGE*/

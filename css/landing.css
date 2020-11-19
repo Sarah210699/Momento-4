@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Abel', sans-serif;
+    font-size: 19px;
+    min-height: 100%; /*minimo de alto */
+    
+}
+
+.header .logo figure {
+    width: 200px;
+    margin: auto;
+}
+
+.header .logo figure img {
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+}
+
+.grid_container {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:  /* las áreas que vamos a ocupar en la maquetación */
+    
+    "header"
+    "main"
+    "sidebar"
+    "footer"
+    
+    
+    ;
+}
+
+.header {
+    grid-area: header;
+    background-color:  rgb(27, 45, 36);
+    
+}
+
+.main {
+    grid-area: main;
+    background-color: #2D4A31;
+    border-radius: 10px;
+    padding: 5px;
+   /* border: 2px solid rgb(207, 13, 133); */
+   
+}
+
+
+.main h1 {
+    color: #ecf0f1;
+    font-size: 40px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  /* border: 1px solid greenyellow; */
+}
+
+.main h2 {
+    font-size: 50px;
+    color: #ecf0f1;
+    width: 80%;
+    text-align: center;
+    margin: 5px auto;
+    padding: 10px 0px 0px 0px;
+  /* border: 1px solid rgb(120, 47, 255); */
+}
+
+
+.main .imgs {
+    width: 100%;
+   /* border: 1px solid rgb(241, 255, 47) */
+
+}
+
+
+.main .imgs img {
+    width: 50%;
+    margin: 30px 0px 20px 0px;
+    border-radius: 4px;
+  /*  border: 1px solid rgb(255, 89, 47) */
+
+}
+
+.main .imgs p {
+    width: 40%;
+    float: right;
+    color: #ecf0f1;
+    font-size: 12px;
+    margin: 30px 25px 40px 25px;
+    padding: 30px 40px 10px 40px;
+    font-family: 'Montserrat', sans-serif;
+  /*  border: 1px solid rgb(47, 255, 82); */
+}
+
+
+/*Testimonios */
+
+
+.main .testi {
+    width: 90%;
+    
+   /* border: 1px solid rgb(255, 47, 220); */
+}
+
+.main .testi  h3 {
+    padding: 10px 50px 5px 50px;
+    color: #ecf0f1;
+}
+
+
+.main .testi  h4 {
+    padding: 5px 50px 10px 50px;
+    color: #ecf0f1;
+}
+
+.main .testi p {
+   font-size: 12px;
+  /*  border: 1px solid rgb(255, 224, 47); */
+}
+
+
+
+/*
+.main .testi .mari {
+    width: 100%;
+    border: 1px solid rgb(47, 224, 255);
+}
+
+
+.main .testi .migue {
+    float: right;
+    border: 1px solid rgb(255, 47, 47);
+}
+
+.main .testi p {
+    width: 35%;
+    border: 1px solid rgb(255, 224, 47);
+}
+
+*/
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #2D4A31;
+    padding: 60px 60px 50px 60px;
+    border-radius: 10px;
+    color: #ecf0f1;
+    
+}
+
+.sidebar h2 {
+    font-size: 35px;
+    margin: 0px 0px 10px 0px;
+}
+
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(27, 45, 36) ;
+    padding: 0px 0px 10px 0px;
+
+}
+
+
+.footer .social img {
+    width: 3%;
+    float: right;
+    margin: 20px 30px 0px 20px;
+  /*  border: 1px solid rgb(255, 200, 47); */
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+    align-items: flex-end;
+    padding: 10px 100px 0px 100px;
+  /*  border: 1px solid rgb(255, 200, 47); */
+}
+
+.footer a:hover {
+   color: #99cc99;
+}
+
+/*FORMULARO*/
+
+#cont_texto label {
+    font-size: 30px;
+}
+
+input[type=text], select {
+    border-radius: 4px;
+    border: 2px solid #ccc;
+}
+
+input[type=email], select {
+    border-radius: 4px;
+    border: 2px solid #ccc;
+}
+
+input[type=tel], select {
+    border-radius: 4px;
+    border: 2px solid #ccc;
+}
+
+textarea {
+    border-radius: 4px;
+    border: 2px solid #ccc;
+}
+
+
+input[type=submit] {
+    background-color: #ecf0f1;
+    color: black;
+    padding: 12px 20px;
+    font-family: 'Abel', sans-serif;
+    border: 3px solid #99cc99;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    
+  }
+
+  input:hover[type=submit] {
+    background-color: #99cc99;
+     border: 1px solid #ccc;
+  }
+
+
+
+/*
+
+@media (min-width: 600px) {
+    .grid_container {
+
+    
+    grid-template: 
+    "header    header"   120px  
+    "main     sidebar "     auto
+    "footer    footer"   100px /
+     200px     auto;
+
+    }
+}
+
+*/
+
+/*MOBILE*/
+
+@media (min-width: 310px) {
+    .grid_container{
+        grid-template: 
+        "header"  100px
+        "main"
+        "sidebar"
+        "footer";
+    }
+
+    .header .logo figure {
+        width: 200px;
+        margin: auto;
+    }
+    
+    header .logo figure img {
+        width: 100%;
+        padding: 20px 0px 20px 0px;
+    }
+
+    .main h1 {
+        color: #ecf0f1;
+        font-size: 25px;
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        padding: 20px 0px 0px 0px;
+      /*  border: 1px solid greenyellow; */
+    }
+    
+    .main h2 {
+        font-size: 20px;
+        color: #ecf0f1;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        padding: 20px 0px 20px 0px;
+       /* border: 1px solid greenyellow; */
+    }
+
+    .main p {
+        font-size: 10px;
+        text-align: justify;
+    }
+
+    .main div  {
+        margin: auto;
+        width: 80%;
+       /* border: 1px solid rgb(47, 179, 255);*/
+    }
+
+    .main div figure {
+        width: 80%;
+        margin: auto;
+    }
+
+    .main div figure img {
+        width: 100%;
+        margin: 20px 0px 40px 0px;
+        
+      
+    }
+
+    /*BENEFICIOS*/
+
+    .main .imgs p {
+        width: 40%;
+        float: right;
+        color: #ecf0f1;
+        font-size: 10px;
+        margin: 20px 10px 40px 10px;
+        padding: 10px 0px 10px 0px;
+        font-family: 'Montserrat', sans-serif;
+       /* border: 1px solid rgb(47, 255, 82); */
+    }
+    
+
+    /*TESTIMONIO*/
+
+    .main .testi {
+        width: 90%;
+        margin: 5px 20px 40px 20px;
+       /* border: 1px solid rgb(255, 47, 220); */
+    }
+    
+    .main .testi  h3 {
+        padding: 10px 50px 5px 50px;
+        color: #ecf0f1;
+    }
+    
+    
+    .main .testi  h4 {
+        padding: 5px 50px 10px 50px;
+        color: #ecf0f1;
+    }
+    
+    .main .testi p {
+       font-size: 12px;
+       color: #ecf0f1;
+      /*  border: 1px solid rgb(255, 224, 47); */
+    }
+    
+
+    #cont_texto label {
+        font-size: 12px;
+    }
+    
+    .sidebar h2 {
+        font-size: 20px;
+        margin: 0px 0px 10px 0px;
+    }
+    
+    .footer a {
+        text-decoration: none;
+        color: #ecf0f1;
+        font-family: 'Abel', sans-serif;
+        font-size: 15px;
+        align-items: flex-end;
+        padding: 20px 20px 0px 20px;
+       /* border: 1px solid rgb(255, 200, 47); */
+    }
+
+    .footer .social img {
+        width: 8%;
+        float: right;
+        margin: 35px 30px 0px 20px;
+     /*   border: 1px solid rgb(255, 200, 47); */
+    }
+
+    .footer a:hover {
+        color: #99cc99;
+     }
+
+}
+
+
+/*TABLET*/
+
+@media (min-width: 700px) {
+    .grid_container{
+        grid-template: 
+        "header    header   header "   120px
+        " main     main     sidebar"    auto
+        "footer   footer     footer"    100px/
+        200px      auto     300px;
+        
+        ;
+    }
+
+
+    .main h2 {
+        font-size: 30px;
+    }
+
+    
+    
+    .main div figure img {
+        width: 100%;
+    }
+
+    /*Beneficios*/
+
+    .main .imgs p {
+        width: 40%;
+        float: right;
+        color: #ecf0f1;
+        font-size: 13px;
+        margin: 20px 0px 20px 0px;
+        padding: 10px 0px 10px 0px;
+        font-family: 'Montserrat', sans-serif;
+     /*   border: 1px solid rgb(47, 255, 82); */
+    }
+    
+     /*TESTIMONIO*/
+
+     .main .testi {
+        width: 90%;
+        margin: 50px 20px 40px 20px;
+      /*  border: 1px solid rgb(255, 47, 220); */
+    }
+    
+    .main .testi  h3 {
+        padding: 10px 50px 5px 50px;
+        color: #ecf0f1;
+    }
+    
+    
+    .main .testi  h4 {
+        padding: 5px 50px 10px 50px;
+        color: #ecf0f1;
+    }
+    
+    .main .testi p {
+       font-size: 15px;
+       color: #ecf0f1;
+      /*  border: 1px solid rgb(255, 224, 47); */
+    }
+
+
+     .footer a {
+        text-decoration: none;
+        color: #ecf0f1;
+        font-family: 'Abel', sans-serif;
+        font-size: 20px;
+        align-items: flex-end;
+        padding: 20px 100px 0px 100px;
+       /* border: 1px solid rgb(255, 200, 47); */
+    }
+
+    
+    .footer a:hover {
+        color: #99cc99;
+     }
+
+     
+    .footer .social img {
+        width: 5%;
+        float: right;
+        margin: 35px 30px 0px 20px;
+      /*  border: 1px solid rgb(255, 200, 47); */
+    }
+
+      
+}
+
+@media (min-width: 900px) {
+    .grid_container{
+        grid-template: 
+        "header    header   header "   100px
+        " main     main     sidebar"    auto
+        "footer   footer     footer"    80px/
+        200px     auto       360px;
+        
+        ;
+    }
+
+    .main p {
+        width: 80%;
+        margin: auto;
+        color: #ecf0f1;
+        font-size: 16px;
+        padding: 0px 50px 10px 50px;
+        font-family: 'Montserrat', sans-serif;
+     /*   border: 1px solid rgb(47, 179, 255); */
+    }
+
+    .main div  {
+        margin: auto;
+        width: 80%;
+       /* border: 1px solid rgb(47, 179, 255);*/
+    }
+
+    .main div figure {
+        width: 50%;
+        margin: auto;
+    }
+
+    .main div figure img {
+        width: 100%;
+        margin: 20px 0px 20px 0px;
+        
+    }
+
+    .footer a {
+        text-decoration: none;
+        color: #ecf0f1;
+        font-family: 'Abel', sans-serif;
+        font-size: 20px;
+        align-items: flex-end;
+        padding: 20px 100px 0px 100px;
+       /* border: 1px solid rgb(255, 200, 47); */
+    }
+
+    
+    .footer a:hover {
+        color: #99cc99;
+     }
+}
+
+

@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Montserrat&family=Rajdhani&family=Unica+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%; /*minimo de alto */
+    
+}
+
+.header .logo figure {
+    width: 200px;
+    margin: auto;
+}
+
+header .logo figure img {
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+}
+
+
+.grid_container {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:  /* las áreas que vamos a ocupar en la maquetación */
+    
+    "header"
+    "main"
+    "footer"
+    
+    ;
+}
+
+.header {
+    grid-area: header;
+    background-color:  rgb(27, 45, 36);
+    
+}
+
+.header .logo figure {
+    width: 200px;
+    margin: auto;
+}
+
+.header .logo figure img {
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+}
+
+
+.main {
+    grid-area: main;
+    background-image: url("../img/Micrositio/green.jpg");
+    border-radius: 10px;
+    padding: 5px;
+  /*  border: 2px solid rgb(207, 13, 133); */
+   
+}
+
+/*tipografía*/
+
+.main .tipo {
+    float: right;
+    width: 45%;
+    color: #ecf0f1;
+    margin: 100px 70px 30px 100px;
+   /* border: 1px solid blue; */
+}
+
+.main .tipo h2 {
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+    margin: 30px 60px 0px 60px;
+}
+
+
+.main .tipo h3 {
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+    margin: 30px 60px 0px 60px;
+}
+
+.main .tipo p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    font-size: 16px;
+    margin: 20px 60px 0px 60px;
+}
+
+
+
+.main .tipo .fuente-uno p {
+    font-family: 'Unica One', cursive; 
+
+}
+
+.main .tipo .fuente-dos p{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.main .tipo .fuente-tres p{
+    font-family: 'Abel', sans-serif;
+}
+
+.main .tipo .fuente-cuatro p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main .paleta {
+    color: #ecf0f1;
+}
+
+.main .paleta figure {
+    width: 46%;
+  /*  border: 1px solid rgb(208, 255, 0); */
+}
+
+.main .paleta figure img {
+    width: 60%;
+    margin: 20px 60px 0px 60px;
+}
+
+
+.main .paleta  h1 {
+    color: #ecf0f1;
+    font-size: 30px;
+    text-align: justify;
+    margin: 30px 70px 0px 70px;
+    font-family: 'Abel', sans-serif;
+ /*   border: 2px solid rgb(207, 13, 133); */
+}
+
+.main .paleta h2 {
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+    color: #ecf0f1;
+    margin: 30px 60px 0px 60px;
+   
+    
+}
+
+.main .paleta p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 30px 60px 0px 60px;
+  /*  border: 2px solid rgb(100, 207, 13); */
+}
+
+
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(27, 45, 36) ;
+    padding: 20px 0px 10px 0px;
+   
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-family: 'Abel', sans-serif;
+    font-size: 25px;
+    align-items: flex-end;
+    padding: 60px 100px 0px 100px;
+   /* border: 1px solid rgb(255, 200, 47); */
+}
+
+
+.footer a:hover {
+    color: #99cc99;
+ }
+ 
+/*MOBILE*/
+
+@media (min-width: 310px) {
+
+    .grid_container{
+        grid-template: 
+        "header"  100px
+        "main"
+        "footer";
+    }
+
+    .header .logo figure {
+        width: 200px;
+        margin: auto;
+    }
+    
+    header .logo figure img {
+        width: 100%;
+        padding: 20px 0px 20px 0px;
+    }
+
+    /*TIPOGRAFÍA*/
+
+    .main .tipo h2 {
+        font-family: 'Abel', sans-serif;
+        font-size: 25px;
+        margin: 30px 60px 0px 60px;
+    }
+    
+    
+    .main .tipo h3 {
+        font-family: 'Abel', sans-serif;
+        font-size: 20px;
+        margin: 30px 60px 0px 60px;
+    }
+
+    .main .tipo p {
+        font-family: 'Montserrat', sans-serif;
+        text-align: justify;
+        font-size: 16px;
+        margin: 20px 60px 0px 60px;
+    }
+    
+    
+    .main .tipo .fuente-uno p {
+        font-family: 'Unica One', cursive; 
+    
+    }
+    
+    .main .tipo .fuente-dos p{
+        font-family: 'Rajdhani', sans-serif;
+    }
+    
+    .main .tipo .fuente-tres p{
+        font-family: 'Abel', sans-serif;
+    }
+    
+    .main .tipo .fuente-cuatro p{
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    /*PALETAS*/
+
+    .main .paleta figure {
+        width: 40%;
+      /*  border: 1px solid rgb(208, 255, 0); */
+    }
+
+    .main .paleta figure img {
+        width: 60%;
+        margin: 20px 60px 0px 60px;
+    }
+
+    .main .paleta div {
+        width: 100px;
+
+    }
+
+    .main .paleta div img {
+    width: 80%;
+    margin: 30px 50px 20px 50px;
+    border-radius: 4px;
+  /*  border: 1px solid rgb(255, 89, 47) */
+
+}
+
+    .main .tipo p {
+        font-family: 'Montserrat', sans-serif;
+        text-align: justify;
+        font-size: 16px;
+        margin: 20px 60px 0px 60px;
+    }
+    
+
+}
+
+
+ @media (min-width: 600px) {
+    .grid_container{
+        grid-template: 
+        "header    header   header "   120px
+        " main     main     main   "    auto
+        "footer   footer     footer"    100px/
+        200px     150px      400px;
+        
+        ;
+    }
+
+    
+    .footer a {
+        text-decoration: none;
+        color: #ecf0f1;
+        font-family: 'Abel', sans-serif;
+        font-size: 20px;
+        align-items: flex-end;
+        padding: 20px 100px 0px 100px;
+    /* border: 1px solid rgb(255, 200, 47); */
+    }
+ }
+
+
+ @media (min-width: 900px) {
+
+        .grid_container{
+            grid-template: 
+            "header    header   header "    100px
+            " main    main      main"       auto
+            "footer   footer     footer"    80px/
+            400px     auto      400px;
+            
+        }
+
+        
+        .footer a {
+            text-decoration: none;
+            color: #ecf0f1;
+            font-family: 'Abel', sans-serif;
+            font-size: 20px;
+            align-items: flex-end;
+            padding: 20px 100px 0px 100px;
+        /* border: 1px solid rgb(255, 200, 47); */
+        }
+
+        
+        .footer a:hover {
+            color: #99cc99;
+        }
+
+
+}
